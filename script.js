@@ -1,10 +1,9 @@
 const jwt = require('jsonwebtoken');
 const crypto = require('crypto');
 
-// Use secure values in real projects
 const JWT_SECRET = 'my_jwt_secret';
-const ENC_KEY = '12345678901234567890123456789012'; // 32 chars = 256 bits
-const IV = '1234567890123456'; // 16 chars = 128 bits
+const ENC_KEY = '12345678901234567890123456789012'; 
+const IV = '1234567890123456'; 
 
 const encrypt = (payload) => {
   // encrypt the payload and return token
